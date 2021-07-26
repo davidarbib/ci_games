@@ -34,5 +34,8 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           pwd
+          ls -l
+          cd ..
+          ls -l
           make test
 
