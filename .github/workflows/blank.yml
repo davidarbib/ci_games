@@ -33,6 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd $GITHUB_WORKSPACE
+          apt-get install make
           pwd
           ls -l
           cd ..
