@@ -6,7 +6,7 @@
 #    By: darbib <darbib@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/11/06 14:53:36 by darbib            #+#    #+#              #
-#    Updated: 2021/07/26 18:01:10 by darbib           ###   ########.fr        #
+#    Updated: 2021/07/26 19:23:42 by darbib           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,6 +21,7 @@ RESET = 	'\033[0m'
 CHECK =		'\xE2\x9C\x94'
 
 NAME = ci_games
+EXE = $(addprefix ./, $(NAME))
 CFLAGS = -std=c++98 -Wall -Wextra -Werror
 CC = clang++
 
@@ -86,3 +87,4 @@ re : fclean all
 
 test : all
 	@echo "test running" > testlog
+	@$(EXE)
