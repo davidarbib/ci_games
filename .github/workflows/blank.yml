@@ -33,5 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd $GITHUB_WORKSPACE
+          pwd
           make test
 
